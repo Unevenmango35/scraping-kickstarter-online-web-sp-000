@@ -1,8 +1,8 @@
 # require libraries/modules here
 
 def create_project_hash
-  # This just opens a file and reads it into a variable
-html = File.read('fixtures/kickstarter.html')
+
+html = File.read('fixtures/kickstarter.html') # This just opens a file and reads it into a variable
 
 kickstarter = Nokogiri::HTML(html)
 end
