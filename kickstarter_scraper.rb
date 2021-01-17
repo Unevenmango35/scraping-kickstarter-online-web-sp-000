@@ -8,4 +8,7 @@ html = File.read('fixtures/kickstarter.html') # This just opens a file and reads
 kickstarter = Nokogiri::HTML(html)
 binding.pry
 end
-create_project_hash # projects: kickstarter.css("li.project.grid_4")
+create_project_hash 
+
+# projects: kickstarter.css("li.project.grid_4")
+# title: project.css("h2.bbcard_name strong a").text
