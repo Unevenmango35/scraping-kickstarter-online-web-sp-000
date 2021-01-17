@@ -7,7 +7,7 @@ def create_project_hash
 html = File.read('fixtures/kickstarter.html') # This just opens a file and reads it into a variable
 kickstarter = Nokogiri::HTML(html)
 projects = {}
- 
+
   kickstarter.css("li.project.grid_4").each do |project|
     title = project.css("h2.bbcard_name strong a").text
     projects[title.to_sym] = {
